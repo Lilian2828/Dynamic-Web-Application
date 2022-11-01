@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>Welcome to <%=shopName%></title>
+</head>
+<body style="background-color: rgb(216, 238, 245);">
+<h1 style="color: red;"><%=shopName%> Shop</h1>
+<h2 style="color: rgb(0, 0, 129);">Here are some things that we sell:</h2>
+<ul>
+<% for(let i = 0; i < productCategories.length; i++) { %>
+<li><%= productCategories[i] %></li>
+<% } %>
+<p>Coming soon!</p>
+<form action="/search-result" method="GET">
+    <input id="search-box" type="text" name="keyword" value="Default">
+    <input type="submit" value="OK" >
+    </form>
+</ul>
+</body>
+</html>

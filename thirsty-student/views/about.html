@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title><%=shopName%></title></head>
+<body style="background-color: rgb(216, 238, 245);">
+    <h1 style="color: red;">Welcome to <%=shopName%> Shop</h1>
+<p style="color: rgb(0, 0, 129);">We sell all sorts of drinks</p>
+<ul style="color: blue;">
+    <% for(let i = 0; i < ManagersandLocations.length; i++) { %>
+    <li><%= ManagersandLocations[i] %></li>
+    <% } %>
+    </ul>
+</body>
+</html>
